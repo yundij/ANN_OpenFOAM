@@ -12,7 +12,7 @@ DFfeatures.push_back(( Resys_ -DFmeans_[index])/DFvars_[index]);
 DFfeatures.push_back( (fs_-DFmeans_[index])/DFvars_[index]); 
 ++index;
 //Collect solid volume fraction
-DFfeatures.push_back( ( voidfraction/alphaMax - DFmeans_[index])/DFvars_[index] );
+DFfeatures.push_back( ((1 - voidfraction)/alphaMax - DFmeans_[index])/DFvars_[index] );
 ++index;
 //Collect pressure gradient
 DFfeatures.push_back((gradP.z()/9.8/rho_s-DFmeans_[index])/DFvars_[index]);
